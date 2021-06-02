@@ -1,3 +1,20 @@
-body{
-    background:yellow
+.container{
+    width:80%;
+    background:#1c1c1c;
+    >nav{
+       height:10px;
+       background:red;
+       width:100%; 
+       ul{
+           padding:0px;
+           margin:0px;
+           >li{
+               background:yellow;
+               &:first-child{
+                   color:red;
+               }
+           }
+       }
+    }
 }
+

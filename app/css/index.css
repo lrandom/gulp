@@ -1,2 +1,14 @@
-body {
-  background: yellow; }
+.container {
+  width: 80%;
+  background: #1c1c1c; }
+  .container > nav {
+    height: 10px;
+    background: red;
+    width: 100%; }
+    .container > nav ul {
+      padding: 0px;
+      margin: 0px; }
+      .container > nav ul > li {
+        background: yellow; }
+        .container > nav ul > li:first-child {
+          color: red; }
