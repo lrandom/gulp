@@ -1,9 +1,13 @@
+
+@import './vars';
+@import './_mixins/utils.scss';
 .container{
     width:80%;
     background:#1c1c1c;
+    @include card2(50px);
     >nav{
        height:10px;
-       background:red;
+       background:$primary-color;
        width:100%; 
        ul{
            padding:0px;
@@ -11,7 +15,7 @@
            >li{
                background:yellow;
                &:first-child{
-                   color:red;
+                   color:$primary-color;
                }
            }
        }

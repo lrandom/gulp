@@ -1,0 +1,19 @@
+@mixin card(){
+    background:white;
+    border:1px solid #cdcdcd;
+    padding:20px;
+    border-radius: 5px;
+}
+
+@mixin card2($padding:20px){
+    background:white;
+    border:1px solid #cdcdcd;
+    padding:$padding;
+    border-radius: 5px;
+}
+
+@for $i from 5 through 500{
+    .pd-#{$i}{
+         padding: #{$i}px !important;
+    }
+}
